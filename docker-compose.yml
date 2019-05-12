@@ -1,0 +1,38 @@
+version: "3.1"
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+
+  api:
+    image: node:slim
+    restart: always
+    user: node
+    working_dir: /home/node/app
+    volumes: 
+      - ./:/home/node/app
+    ports:
+      - 3000:3000
+    environment:
+      NODE_ENV: docker
+    command: "npm start"
+    links:
+      - mongo
+    depends_on: 
+      - mongo
+
+  simulator:
+    image: node:slim
+    restart: always
+    user: node
+    working_dir: /home/node/app
+    volumes: 
+      - ./:/home/node/app
+    command: "npm run simulator"
+    links:
+      - api
+    depends_on: 
+      - api

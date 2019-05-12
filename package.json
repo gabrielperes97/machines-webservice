@@ -1,0 +1,30 @@
+{
+  "name": "machines ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "simulator": "node simulator.js"
+  },
+  "author": "Gabriel Peres Leopoldino",
+  "license": "ISC",
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.4.4",
+    "morgan": "^1.9.1",
+    "node": "^12.2.0",
+    "node-rest-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "vorpal": "^1.12.0",
+    "vorpal-repl": "^1.1.8"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    "DBHost" : "mongodb://mongo:27017/Machines",
+    "port" : 3000
+}

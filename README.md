@@ -4,7 +4,7 @@ Contém o webservice com a api para o Machines. O Webservice foi desenvolvido em
 
 ## Uso
 
-Executa-se o comando ```npm install``` para resolver as dependências. Após isso pode se executar o webservice e o simulador.
+Executa-se o comando ```npm install``` para resolver as dependências. Após isso pode se executar o webservice e o simulador. Ambos podem ser iniciados, junto com um banco mongodb a partir do docker-compose deste projeto.
 
 ### Webservice 
 
